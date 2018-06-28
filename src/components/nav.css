@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+  color: white; }
+
+.nav-wrapper {
+  display: flex;
+  letter-spacing: 3px;
+  position: absolute; }
+
+.nav-link-list a {
+  margin-left: 25px;
+  border-radius: 3px;
+  padding: 5px; }
+
+.nav-link-list a:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  animation: fadeIn 1.2s linear; }
+
+@keyframes fadeIn {
+  0% {
+    background-color: #191c21;
+    color: white; }
+  50% {
+    color: black; }
+  100% {
+    background-color: white;
+    color: black; } }
+
+.nav-wrapper ul {
+  list-style: none;
+  display: flex; }

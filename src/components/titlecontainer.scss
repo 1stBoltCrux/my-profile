@@ -1,0 +1,28 @@
+
+.title-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-image: url('./assets/sky.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+}
+
+.arrow {
+  margin: 25px 0 0 20px;
+}
+
+.ted-reading {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid white;
+  margin-left: 20px;
+}
