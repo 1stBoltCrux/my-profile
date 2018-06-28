@@ -7,7 +7,7 @@ export default function  Nav(){
         <ul className='nav-link-list'>
           <li><a>Home</a></li>
           <li><a>About Me</a></li>
-          <li><a>Projects</a></li>
+          <li><a>Work</a></li>
         </ul>
       </div>
       <div className='nav-social'></div>

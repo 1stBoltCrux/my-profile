@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 600px;
   width: 100%;
   background-image: url('./assets/sky.jpg');
   background-position: center;
@@ -17,12 +17,24 @@
 .arrow {
   margin: 25px 0 0 20px;
 }
+.ted-reading img {
+  width: 350px;
+  margin-left: 30px;
+
+}
 
 .ted-reading {
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/tedreading.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 300px;
-  border-radius: 5px;
-  overflow: hidden;
-  border: 1px solid white;
+  width: 200px;
+
+
+
   margin-left: 20px;
 }
