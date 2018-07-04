@@ -3,19 +3,19 @@ a {
   color: white;
 }
 
-.nav-wrapper {
+.navWrapper {
   display: flex;
   letter-spacing: 3px;
   position: absolute;
 }
 
-.nav-link-list a {
+.navLinkList a {
   margin-left: 25px;
   border-radius: 3px;
   padding: 5px;
 }
 
-.nav-link-list a:hover {
+.navLinkList a:hover {
   background-color: white;
   color: black;
   cursor: pointer;
@@ -36,7 +36,10 @@ a {
   }
 }
 
-.nav-wrapper ul {
+.navWrapper ul {
 list-style: none;
 display: flex;
+}
+.navSocial {
+  
 }

@@ -1,16 +1,16 @@
 import React from 'react';
-import './titlecontainer.css';
+import styles from './titlecontainer.scss';
 import arrow from './assets/arrow.png';
 import scratch from './assets/scratchbackground.png'
 
 export default function TitleContainer(){
   return(
-    <div className='title-container-wrapper'>
+    <div className={styles.titleContainerWrapper}>
       <p>Ted</p>
-      <div className='arrow'>
+      <div className={styles.arrow}>
         <img src={arrow} width='100px'/>
       </div>
-      <div className='ted-reading'>
+      <div className={styles.tedReading}>
         <img src={scratch} width='200px'/>
       </div>
 
