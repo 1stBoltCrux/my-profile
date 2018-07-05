@@ -4,8 +4,8 @@ import styles from './aboutme.scss';
 export default function AboutMe() {
   return(
     <div className={styles.aboutMeWrapper}>
-      <h1>About Me:</h1>
-      <h3>Hi, my name is Ted. I like to build websites.</h3>
+      <h1>About Me :</h1>
+      <h3>Hi, my name is Ted. I am a front-end developer. I like to draw and I like to code.</h3>
     </div>
   )
 }

@@ -9,6 +9,7 @@ export default function  Nav(){
           <li><a>Home</a></li>
           <li><a>About Me</a></li>
           <li><a>Work</a></li>
+          <li><a>Contact</a></li>
         </ul>
       </div>
       <div className={styles.navSocial}></div>

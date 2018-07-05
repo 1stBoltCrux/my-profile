@@ -29,7 +29,7 @@ export default function Projects(){
   return(
     <div className={styles.projectsWrapper}>
       <div className={styles.title}>
-        <h2>My Work: </h2>
+        <h1>My Work : </h1>
       </div>
       <div className={styles.line}>
       </div>
@@ -42,6 +42,8 @@ export default function Projects(){
         description={project.description}
       />
       )}
+      </div>
+      <div className={styles.line}>
       </div>
     </div>
   );
