@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import styles from './nav.scss';
+import NavDropdown from './NavDropdown';
 
 import { Link } from 'react-router'
 
@@ -10,7 +11,8 @@ export default class Nav extends Component {
     super(props)
     this.state = {
       windowSize: window.innerWidth,
-      navDropdownVisible: false
+      navDropdownVisible: false,
+      showChild: true
     }
   }
 
@@ -20,6 +22,12 @@ export default class Nav extends Component {
 
   componentWillUnmount(){
     window.removeEventListener('resize', this.handleSize)
+}
+
+  buttonClick = () => {
+    this.setState({
+      showChild: !this.state.showChild
+    })
   }
 
 
@@ -50,7 +58,20 @@ if (this.state.windowSize > 560) {
 
 } else {
   return (
-    <p>hey there guy</p>
+    <div className={styles.navWrapper}>
+      <div className={styles.navLinks}>
+        <div className={styles.navLinkList}>
+          <div onClick={this.buttonClick} className={styles.hamburger}> {this.state.showChild ? 'Unmount': 'Mount'}
+            <div className={styles.burgerLine}></div>
+            <div className={styles.burgerLine}></div>
+            <div className={styles.burgerLine}></div>
+          </div>
+          <NavDropdown onTransitionEnd={this.transitionEnd} mounted={this.state.showChild}/>
+        </div>
+      </div>
+      <div className={styles.navSocial}></div>
+
+    </div>
   )
 }
 }

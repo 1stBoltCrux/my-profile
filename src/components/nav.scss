@@ -13,6 +13,7 @@ a {
   letter-spacing: 3px;
   position: absolute;
 }
+
 .navLinkList {
   width: 100%;
   display: flex;
@@ -32,6 +33,17 @@ a {
   color: black;
   cursor: pointer;
   animation: fadeIn 1.2s linear;
+}
+
+.hamburger {
+  margin: 10px;
+}
+
+.burgerLine {
+  width: 50px;
+  background-color: white;
+  height: 3px;
+  margin-bottom: 3px;
 }
 
 @keyframes fadeIn {
