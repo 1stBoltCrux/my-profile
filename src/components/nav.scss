@@ -3,13 +3,25 @@ a {
   color: white;
 }
 
+.navLinks {
+  width: 100%;
+}
+
 .navWrapper {
+  width: 100%;
   display: flex;
   letter-spacing: 3px;
   position: absolute;
 }
+.navLinkList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 
 .navLinkList a {
+  text-align: center;
+  min-width: 100px;
   margin-left: 25px;
   border-radius: 3px;
   padding: 5px;
@@ -41,5 +53,5 @@ list-style: none;
 display: flex;
 }
 .navSocial {
-  
+
 }
