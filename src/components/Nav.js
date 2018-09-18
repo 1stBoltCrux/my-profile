@@ -12,7 +12,7 @@ export default class Nav extends Component {
     this.state = {
       windowSize: window.innerWidth,
       navDropdownVisible: false,
-      showChild: true
+      showChild: false
     }
   }
 
@@ -61,12 +61,13 @@ if (this.state.windowSize > 560) {
     <div className={styles.navWrapper}>
       <div className={styles.navLinks}>
         <div className={styles.navLinkList}>
-          <div onClick={this.buttonClick} className={styles.hamburger}> {this.state.showChild ? 'Unmount': 'Mount'}
+          <div onClick={this.buttonClick} className={styles.hamburger}>
             <div className={styles.burgerLine}></div>
             <div className={styles.burgerLine}></div>
             <div className={styles.burgerLine}></div>
           </div>
-          <NavDropdown onTransitionEnd={this.transitionEnd} mounted={this.state.showChild}/>
+          <NavDropdown
+             onTransitionEnd={this.transitionEnd} mounted={this.state.showChild}/>
         </div>
       </div>
       <div className={styles.navSocial}></div>

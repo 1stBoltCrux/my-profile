@@ -1,3 +1,14 @@
-.fade {
-  color: white;
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1.2s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
 }

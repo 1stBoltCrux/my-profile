@@ -18,6 +18,7 @@ a {
   cursor: pointer;
   animation: fadeIn 1.2s linear; }
 
+
 @keyframes fadeIn {
   0% {
     background-color: #191c21;

@@ -5,7 +5,7 @@ export default class NavDropdown extends Component {
   constructor(props){
     super(props)
     this.state = {
-      show: true,
+      show: this.props.mounted,
       style: {
         opacity: 0,
         transition: 'all 2s ease'
@@ -55,7 +55,15 @@ export default class NavDropdown extends Component {
   }
   render(){
     return(
-      this.state.show && <h1 style={this.state.style} onTransitionEnd={this.transitionEnd}>Hello</h1>
+      this.state.show && <div style={this.state.style} onTransitionEnd={this.transitionEnd}>
+        <div className={styles.dropdownContainer}>
+          <a>Home</a>
+          <a>About Me</a>
+          <a>Work</a>
+          <a>Contact</a>
+        </div>
+
+      </div>
     )
   }
 }
