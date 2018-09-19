@@ -26,15 +26,12 @@ a {
   text-align: center;
   min-width: 100px;
   margin-left: 25px;
-  border-radius: 3px;
   padding: 5px;
 }
 
 .navLinkList a:hover {
-  background-color: white;
-  color: black;
   cursor: pointer;
-  animation: fadeIn 1.2s linear;
+  animation: fadeIn .7s linear;
 }
 
 .navDropdown {
@@ -42,7 +39,7 @@ background-color: red;
 }
 
 .hamburger {
-  left: 10px;
+  left: 10px;;
   position: absolute;
   top: 8px;
   animation: fadeInHamburger 1.2s linear;
@@ -67,21 +64,14 @@ background-color: red;
 @keyframes fadeIn {
   0% {
     background-color: #191c21;
-    color: white;
-  }
-  50%{
     color: black;
   }
   100%{
-    background-color: white;
-    color: black;
+    color: white
   }
 }
 
 .navWrapper ul {
 list-style: none;
 display: flex;
-}
-.navSocial {
-
 }

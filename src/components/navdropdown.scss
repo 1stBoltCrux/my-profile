@@ -1,7 +1,8 @@
 .dropdownContainer {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   margin: 0;
-  width: 18vh;
-  background-image: linear-gradient(to bottom right, black, rgba(0,0,0, 0.2));
+  width: 120px;
+  background-color: black;
   display: flex;
   flex-direction: column;
   animation: fadeIn 1.0s linear;
@@ -12,6 +13,30 @@
 
 .closeButton {
   margin-top: 10px;
+}
+
+a {
+  padding: 5px;
+}
+
+a:hover {
+  border-bottom: solid 2px white;
+  cursor: pointer;
+  animation: fadeIn .7s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: #191c21;
+    color: white;
+  }
+  50%{
+    color: black;
+  }
+  100%{
+    background-color: white;
+    color: black;
+  }
 }
 
 @keyframes fadeIn {
