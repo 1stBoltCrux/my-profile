@@ -28,6 +28,7 @@ export default function Projects(){
 
   return(
     <div className={styles.projectsWrapper}>
+      <a name='work'/>
       <div className={styles.title}>
         <h1>My Work : </h1>
       </div>

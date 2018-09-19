@@ -7,7 +7,7 @@ export default function TitleContainer(props){
   console.log(props);
   if (props.windowSize > 560) {
     return(
-      <div className={styles.titleContainerWrapper}>
+      <div id='home' className={styles.titleContainerWrapper}>
         <div className={styles.tedArrow}>
           <p>Ted</p>
           <div className={styles.arrow}>
@@ -18,19 +18,18 @@ export default function TitleContainer(props){
           <img src={scratch} width='200px'/>
         </div>
       </div>
+
     )
   } else {
     return (
       <div>
-        <div className={styles.titleContainerWrapperMobile}>
+        <div name='home' className={styles.titleContainerWrapperMobile}>
           <p className={styles.name}>Ted</p>
           <div className={styles.tedReading}>
             <img src={scratch} width='200px'/>
           </div>
         </div>
       </div>
-
     )
-
   }
 }

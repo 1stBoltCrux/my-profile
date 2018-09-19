@@ -61,9 +61,9 @@ export default class NavDropdown extends Component {
           <a>About Me</a>
           <a>Work</a>
           <a>Contact</a>
-          <div className={styles.closeButton}>
-            <a onClick={this.props.onButtonClick}>Close</a>
-          </div>
+
+            <a className={styles.closeButton} onClick={this.props.onButtonClick}>Close</a>
+
         </div>
 
       </div>

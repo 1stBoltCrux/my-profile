@@ -56,10 +56,10 @@ if (this.state.windowSize > 560) {
     <div className={styles.navWrapper}>
       <div className={styles.navLinks}>
         <div className={styles.navLinkList}>
-          <a>Home</a>
-          <a>About Me</a>
-          <a>Work</a>
-          <a>Contact</a>
+          <a href='#home'>Home</a>
+          <a href='#aboutme'>About Me</a>
+          <a href='#work'>Work</a>
+          <a href='#contact'>Contact</a>
         </div>
 
       </div>
@@ -71,6 +71,7 @@ if (this.state.windowSize > 560) {
 } else {
   return (
     <div className={styles.navWrapper}>
+      <a name='home'/>
       <div className={styles.navLinks}>
         <div className={styles.navLinkList}>
           {hamburger}

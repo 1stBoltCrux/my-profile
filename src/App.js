@@ -33,7 +33,6 @@ handleSize = () => {
   render() {
     return (
       <div className="app-wrapper">
-
         <Nav/>
         <TitleContainer windowSize={this.state.windowSize}/>
         <AboutMe/>

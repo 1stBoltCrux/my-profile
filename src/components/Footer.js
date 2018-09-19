@@ -7,6 +7,7 @@ export default function Footer(){
   return(
     <div className={styles.footerWrapper}>
       <h3>Contact</h3>
+      <a name='contact'/>
       <div className={styles.iconContainer}>
         <img src={envelope} alt='email envelope'/>
         <img src={linkedin} alt='linkedin'/>
