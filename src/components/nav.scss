@@ -8,6 +8,8 @@ a {
 }
 
 .navWrapper {
+  background-color: rgba(0,0,0, 0.4);
+  height: 30px;
   width: 100%;
   display: flex;
   letter-spacing: 3px;
@@ -40,14 +42,25 @@ background-color: red;
 }
 
 .hamburger {
-  margin: 10px;
+  position: absolute;
+  top: 8px;
+  animation: fadeInHamburger 1.2s linear;
 }
 
 .burgerLine {
-  width: 50px;
+  width: 30px;
   background-color: white;
   height: 3px;
   margin-bottom: 3px;
+}
+
+@keyframes fadeInHamburger {
+  0% {
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
 }
 
 @keyframes fadeIn {

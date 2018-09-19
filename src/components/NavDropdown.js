@@ -61,6 +61,7 @@ export default class NavDropdown extends Component {
           <a>About Me</a>
           <a>Work</a>
           <a>Contact</a>
+          <button onClick={this.props.onButtonClick}>(X)</button>
         </div>
 
       </div>

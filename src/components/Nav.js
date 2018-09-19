@@ -39,6 +39,18 @@ export default class Nav extends Component {
   }
   render(){
 
+    let hamburger;
+
+    if (!this.state.showChild) {
+      hamburger = <div  onClick={this.buttonClick} className={styles.hamburger}>
+        <div className={styles.burgerLine}></div>
+        <div className={styles.burgerLine}></div>
+        <div className={styles.burgerLine}></div>
+      </div>
+    } else {
+      hamburger = null;
+    }
+
 if (this.state.windowSize > 560) {
   return(
     <div className={styles.navWrapper}>
@@ -61,14 +73,11 @@ if (this.state.windowSize > 560) {
     <div className={styles.navWrapper}>
       <div className={styles.navLinks}>
         <div className={styles.navLinkList}>
-          <div onClick={this.buttonClick} className={styles.hamburger}>
-            <div className={styles.burgerLine}></div>
-            <div className={styles.burgerLine}></div>
-            <div className={styles.burgerLine}></div>
-          </div>
-          <NavDropdown
-             onTransitionEnd={this.transitionEnd} mounted={this.state.showChild}/>
+          {hamburger}
         </div>
+        <NavDropdown
+          onButtonClick={this.buttonClick}
+           onTransitionEnd={this.transitionEnd} mounted={this.state.showChild}/>
       </div>
       <div className={styles.navSocial}></div>
 

@@ -5,15 +5,37 @@ import AboutMe from './components/AboutMe.js';
 import Projects from './components/Projects.js';
 import Footer from './components/Footer.js';
 import './App.css';
+import styles from './App.scss'
 
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      windowSize: window.innerWidth
+    }
+  }
+  componentDidMount(){
+    window.addEventListener('resize', this.handleSize)
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('resize', this.handleSize)
+}
+
+handleSize = () => {
+  console.log(window.innerWidth);
+  this.setState({
+    windowSize: window.innerWidth
+  })
+}
+
   render() {
     return (
       <div className="app-wrapper">
 
         <Nav/>
-        <TitleContainer/>
+        <TitleContainer windowSize={this.state.windowSize}/>
         <AboutMe/>
         <Projects/>
       <Footer/>
