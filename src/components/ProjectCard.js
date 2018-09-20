@@ -2,13 +2,20 @@ import React from 'react';
 import styles from './projectcard.scss';
 
 export default function ProjectCard(props){
-  console.log(props.background);
+  console.log(props.image[Object.keys(props.image)[0]]);
   return(
     <div className={styles.projectCardWrapper}>
+      <a href={props.link}>
       <div className={styles.cardContent}>
-        <h3>{props.name}</h3>
-        <p>{props.description}</p>
+        <div className={styles.cardText}>
+          <h3>{props.name}</h3>
+          <p>{props.description}</p>
+        </div>
+        <div className={styles.cardImage}>
+          <img src={props.image[Object.keys(props.image)[0]]} alt='project image'/>
+        </div>
       </div>
+      </a>
     </div>
   )
 }

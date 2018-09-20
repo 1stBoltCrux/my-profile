@@ -1,5 +1,4 @@
 .dropdownContainer {
-  box-sizing: border-box;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   margin: 0;
   width: 120px;
@@ -16,12 +15,12 @@
   margin-top: 10px;
 }
 
-a {
+.dropdownContainer a {
   box-sizing: border-box;
   padding: 5px 5px 5px 5px;
 }
 
-a:hover {
+.dropdownContainer a:hover {
   border-bottom: solid 2px white;
   cursor: pointer;
   animation: fadeIn .7s linear;

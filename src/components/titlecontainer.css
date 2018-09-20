@@ -6,7 +6,7 @@
   width: 100%;
   background-image: url("./assets/sky.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   color: white;
   font-family: 'Permanent Marker', cursive;
@@ -26,7 +26,7 @@
   background-image: url("./assets/tedreading.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   height: 300px;
   width: 200px;
   margin-left: 20px; }

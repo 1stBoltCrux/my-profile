@@ -1,27 +1,36 @@
 import React from 'react';
 import styles from './projects.scss';
 import ProjectCard from './ProjectCard.js'
+import ozone1 from './assets/ozone1.png'
 
 export default function Projects(){
   const projectArray = [
     {
-    name: 'Better Doctor',
-    description: 'A demonstration of API calls and data mining.',
+    name: 'Ozone',
+    description: 'Portland area rock climbing guidebook app - Built with React/Redux/Firebase.',
+    image: {ozone1},
+    link: 'https://github.com/1stBoltCrux/capstone-UI/blob/master/README.md'
 
   },
   {
-    name: 'Better Doctor',
-    description: 'A demonstration of API calls and data mining.',
+    name: 'Ozone',
+    description: 'Portland area rock climbing guidebook app - Built with React/Redux/Firebase.',
+    image: {ozone1},
+    link: 'https://github.com/1stBoltCrux/capstone-UI/blob/master/README.md'
 
   },
   {
-    name: 'Better Doctor',
-    description: 'A demonstration of API calls and data mining.',
+    name: 'Ozone',
+    description: 'Portland area rock climbing guidebook app - Built with React/Redux/Firebase.',
+    image: {ozone1},
+    link: 'https://github.com/1stBoltCrux/capstone-UI/blob/master/README.md'
 
   },
   {
-    name: 'Better Doctor',
-    description: 'A demonstration of API calls and data mining.',
+    name: 'Ozone',
+    description: 'Portland area rock climbing guidebook app - Built with React/Redux/Firebase.',
+    image: {ozone1},
+    link: 'https://github.com/1stBoltCrux/capstone-UI/blob/master/README.md'
 
   },
   ]
@@ -41,6 +50,8 @@ export default function Projects(){
         <ProjectCard
         name={project.name}
         description={project.description}
+        image={project.image}
+        link={project.link}
       />
       )}
       </div>
