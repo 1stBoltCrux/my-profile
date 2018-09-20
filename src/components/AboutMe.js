@@ -6,7 +6,9 @@ export default function AboutMe() {
     <div className={styles.aboutMeWrapper}>
       <a name='aboutme'/>
       <h1>About Me :</h1>
-      <h3>Hi, my name is Ted. I am a front-end developer. I like to draw and I like to code.</h3>
+      <h3>Hi, I'm Ted. I'm a developer. I like to build things. Here's a few of the tools I like to use: </h3>
+      <br/>
+      <p>JavaScript / React / Redux / Angular / Node.js / Express/ MongoDB / Firebase / SASS / Sketch </p>
     </div>
   )
 }

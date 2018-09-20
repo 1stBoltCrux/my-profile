@@ -9,7 +9,7 @@ a {
 
 .navWrapper {
   background-color: rgba(0,0,0, 0.4);
-  height: 30px;
+  height: 35px;
   width: 100%;
   display: flex;
   letter-spacing: 3px;
@@ -23,6 +23,7 @@ a {
 }
 
 .navLinkList a {
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
   min-width: 100px;
   margin-left: 25px;

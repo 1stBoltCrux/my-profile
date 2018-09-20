@@ -1,4 +1,4 @@
-p {
+p, h3 {
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ p {
   background-image: url('./assets/sky.jpg');
   // background-attachment: fixed;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: 'Permanent Marker', cursive;
@@ -33,7 +33,11 @@ p {
   background-repeat: no-repeat;
   color: white;
   font-family: 'Permanent Marker', cursive;
-  font-size: 4rem;
+
+}
+
+.titleContainerWrapperMobile h3 {
+    font-size: 4rem;
 }
 
 .tedArrow {
@@ -50,8 +54,9 @@ p {
 }
 
 .name {
-margin-bottom: 50px;
+margin-bottom: 30px;
 }
+
 
 .tedReading {
   display: flex;

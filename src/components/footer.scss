@@ -1,9 +1,16 @@
 .footerWrapper {
+  color: #202020;
+  text-align: center;
   height: 150px;
+}
+.footerWrapper h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  margin: 10px 0px 10px 0px;
 }
 
 .iconContainer {
   display: flex;
-  flex-direction: column;
-  width: 50px;
+  width: 100%;
+  justify-content: space-around;
 }

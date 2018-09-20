@@ -9,7 +9,7 @@ export default function TitleContainer(props){
     return(
       <div id='home' className={styles.titleContainerWrapper}>
         <div className={styles.tedArrow}>
-          <p>Ted</p>
+          <h3>Ted</h3>
           <div className={styles.arrow}>
             <img src={arrow} width='100px'/>
           </div>
@@ -24,7 +24,7 @@ export default function TitleContainer(props){
     return (
       <div>
         <div name='home' className={styles.titleContainerWrapperMobile}>
-          <p className={styles.name}>Ted</p>
+          <h3 className={styles.name}>Ted</h3>
           <div className={styles.tedReading}>
             <img src={scratch} width='200px'/>
           </div>
