@@ -5,6 +5,7 @@ import ozone1 from './assets/ozone1.png'
 import commongood from './assets/commongood.png'
 import taproom from './assets/taproom.png'
 import backcountry from './assets/backcountry.png'
+import whiteline2 from './assets/whiteline2.png'
 
 export default function Projects(){
   const projectArray = [
@@ -40,11 +41,10 @@ export default function Projects(){
 
   return(
     <div className={styles.projectsWrapper}>
+      <img className={styles.whiteline2} src={whiteline2} alt='white line'/>
       <a name='work'/>
       <div className={styles.title}>
         <h1>My Work : </h1>
-      </div>
-      <div className={styles.line}>
       </div>
       <div className={styles.cardContainer}>
 
@@ -57,8 +57,6 @@ export default function Projects(){
         link={project.link}
       />
       )}
-      </div>
-      <div className={styles.line}>
       </div>
     </div>
   );

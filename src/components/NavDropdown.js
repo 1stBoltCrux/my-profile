@@ -57,10 +57,10 @@ export default class NavDropdown extends Component {
     return(
       this.state.show && <div style={this.state.style} onTransitionEnd={this.transitionEnd}>
         <div className={styles.dropdownContainer}>
-          <a>Home</a>
-          <a>About Me</a>
-          <a>Work</a>
-          <a>Contact</a>
+          <a href='#home'>Home</a>
+          <a href='#aboutme'>About Me</a>
+          <a href='#work'>Work</a>
+          <a href='#contact'>Contact</a>
 
             <a className={styles.closeButton} onClick={this.props.onButtonClick}>Close</a>
 

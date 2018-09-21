@@ -8,16 +8,18 @@ background-size: cover;
 display: flex;
 align-items: center;
 flex-direction: column;
-padding: 40px 0 40px 0;
-padding-bottom: 200px;
+padding: 0px 0 40px 0;
+padding-bottom: 150px;
 }
 
 .projectsWrapper h1 {
-    font-family: 'Permanent Marker', cursive;
+  position: relative;
+  bottom: 20px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .title {
-  padding: 50px 0 20px 0;
+  padding: 0px 0 20px 0;
 }
 
 .cardContainer {
@@ -31,4 +33,9 @@ padding-bottom: 200px;
   height: 1px;
   background-color: rgba(255, 255, 255, 1);
   width: 95%;
+}
+
+.whiteline2 {
+  position: relative;
+  bottom: 100px;
 }

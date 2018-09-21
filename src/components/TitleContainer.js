@@ -23,7 +23,7 @@ export default function TitleContainer(props){
   } else {
     return (
       <div>
-        <div name='home' className={styles.titleContainerWrapperMobile}>
+        <div id='home' className={styles.titleContainerWrapperMobile}>
           <h3 className={styles.name}>Ted</h3>
           <div className={styles.tedReading}>
             <img src={scratch} width='200px'/>
